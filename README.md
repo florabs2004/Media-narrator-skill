@@ -7,6 +7,25 @@ description: Automates adding high-quality voice-overs to videos using macOS nat
 
 This skill automates the process of adding high-quality, professional voice-overs to videos using native macOS capabilities. It is designed to work even when third-party tools like `ffmpeg` are blocked by system security (e.g., Santa).
 
+## Why Use This Skill?
+
+*   **Bypasses Restrictions:** Many corporate or highly-secured Macs block tools like `ffmpeg`. This skill uses **native macOS tools** (`say`, `afconvert`, `AVFoundation`), making it work where others fail.
+*   **Saves Time:** Instead of manually recording audio, syncing it in a video editor, and exporting, you can do it with a single natural language command.
+*   **Professional Results:** It ensures every demo video or tutorial has a consistent, high-quality voice (like the modern macOS "Eddy" or "Flo" voices) and perfect pacing.
+
+## How to Use
+
+1.  **Install the Skill:**
+    ```bash
+    gemini skills install https://github.com/florabs2004/Media-narrator-skill
+    ```
+
+2.  **Ask Gemini to Narrate:**
+    Once installed, you can simply tell Gemini what you want to do:
+    > *"I have a 30-second screen recording called `tutorial.mp4`. Can you write a short script and add a professional voice-over to it?"*
+
+    Gemini will automatically analyze the video duration, generate the audio using high-quality macOS voices, and merge it using the bundled Swift script.
+
 ## Workflow
 
 ### 1. Analysis
